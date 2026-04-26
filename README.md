@@ -1,6 +1,9 @@
 # ⚔ Word Duel — Adversarial Word Transformation Game
 
 A full-stack two-player word game between a **Human** and an **AI**, built with **React + Tailwind CSS** (frontend) and **Node.js + Express** (backend).
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
 ---
 
@@ -62,6 +65,7 @@ The project is built to accommodate advanced LLM logic (like Google's Gemini). A
 ## 📁 Project Structure
 
 ```text
+|── README.md              # You are here!
 AIProject/
 ├── .gitignore             # Optimized for Node, Mac, Editor junk, and AI Secrets
 ├── backend/
@@ -80,8 +84,8 @@ AIProject/
 │   │   └── pages/              # Game & Setup screen layouts
 │   ├── index.html
 │   └── package.json
-│
-└── README.md              # You are here!
+
+
 ```
 
 ---
@@ -114,7 +118,7 @@ GEMINI_API_KEY=your_gemini_api_key_here
 ### 2. Backend Server
 
 ```bash
-cd backend
+cd AIProject/backend
 npm install
 npm start
 # API running at http://localhost:3001
@@ -123,7 +127,7 @@ npm start
 ### 3. Frontend App
 
 ```bash
-cd frontend
+cd AIProject/frontend
 npm install
 npm run dev
 # App running at http://localhost:5173

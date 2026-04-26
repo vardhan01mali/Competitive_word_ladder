@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-gray-950 text-white font-sans;
+    background: radial-gradient(ellipse at top left, rgba(109, 40, 217, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom right, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+                #020617;
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #a78bfa, #34d399, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .neon-border {
+    box-shadow: 0 0 0 1px rgba(139, 92, 246, 0.5),
+                0 0 20px rgba(139, 92, 246, 0.2);
+  }
+
+  .neon-border-green {
+    box-shadow: 0 0 0 1px rgba(52, 211, 153, 0.5),
+                0 0 20px rgba(52, 211, 153, 0.2);
+  }
+
+  .neon-border-red {
+    box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.5),
+                0 0 20px rgba(239, 68, 68, 0.2);
+  }
+
+  .letter-box {
+    @apply w-16 h-16 flex items-center justify-center text-3xl font-bold font-mono rounded-xl transition-all duration-300;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(139, 92, 246, 0.4) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(139, 92, 246, 0.4);
+    border-radius: 2px;
+  }
+}
